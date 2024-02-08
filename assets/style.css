@@ -84,6 +84,11 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+
+	/* ajout css ci-dessous et modif h6 => p */
+	font-size: 1rem !important;
+	margin-bottom: 0.5rem !important;
+	line-height: 1.2 !important;
 }
 #about-me p {
 	width: 80%;
@@ -102,7 +107,9 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	/* color: #000; */
+	/* background-color: #BEB45A; */
+	background-color: #7d733c;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -147,7 +154,8 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	/*ajout css et modif h1 => h2*/
+	font-size: calc(1.375rem + 1.5vw);
 }
 .quote__author {
 	font-family: Spectral;

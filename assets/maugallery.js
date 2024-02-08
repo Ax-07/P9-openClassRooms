@@ -1,4 +1,4 @@
-(function($) {
+$(function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
     var tagsCollection = [];
@@ -114,9 +114,10 @@
       }
     },
     openLightBox(element, lightboxId) {
-      $(`#${lightboxId}`)
-        .find(".lightboxImage")
-        .attr("src", element.attr("src"));
+      const lightboxImage = $(`#${lightboxId}`).find(".lightboxImage");
+      lightboxImage.attr("src", element.attr("src"));
+      lightboxImage.attr("srcset", element.attr("srcset"));
+      lightboxImage.attr("sizes", element.attr("sizes"));
       $(`#${lightboxId}`).modal("toggle");
     },
     prevImage() {
@@ -157,6 +158,7 @@
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+      $(".lightboxImage").attr("srcset", $(next).attr("srcset"));
     },
     nextImage() {
       let activeImage = null;
@@ -194,11 +196,13 @@
       });
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+      $(".lightboxImage").attr("srcset", $(next).attr("srcset"));
+
     },
+
     createLightBox(gallery, lightboxId, navigation) {
-      gallery.append(`<div class="modal fade" id="${
-        lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-hidden="true">
+      gallery.append(
+        `<div class="modal fade" id="${lightboxId ? lightboxId : "galleryLightbox"}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -260,4 +264,4 @@
       });
     }
   };
-})(jQuery);
+});
