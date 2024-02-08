@@ -8,7 +8,6 @@
 ## Performances:
 
 - [x] Modifier la taille et le format des images. (https://www.img2go.com/)
-<<<<<<< HEAD
 - [x] Utilisation de des attribut 'srcset' et 'sizes' pour gérer la taille des images à afficher. - Dans le fichier maugallery.js, j'ai modifier les fonction openLigthBox(), prevImage() et nextImage() de la manière suivante : 
   - l.116  
        <code>
@@ -27,22 +26,6 @@
       $(".lightboxImage").attr("src", $(next).attr("src"));
       $(".lightboxImage").attr("srcset", $(next).attr("srcset")); // ligne ajouter
       </code>
-=======
-- [x] Utilisation de des attribut 'srcset' et 'sizes' pour gérer la taille des images à afficher.
-    - Dans le fichier maugallery.js, j'ai modifier les fonction openLigthBox(), prevImage() et nextImage() de la manière suivante : 
-        - l.116  openLightBox(element, lightboxId) {
-                  const lightboxImage = $(`#${lightboxId}`).find(".lightboxImage");
-                  lightboxImage.attr("src", element.attr("src")); console.log(lightboxImage.attr("src"));
-                  lightboxImage.attr("srcset", element.attr("srcset")); // ligne ajouter
-                  lightboxImage.attr("sizes", element.attr("sizes")); // ligne ajouter
-                  $(`#${lightboxId}`).modal("toggle");
-                          },  
-        - l.123  prevImage() et nextImage()
-                // => 
-                next = imagesCollection[index] || imagesCollection[0];
-                  $(".lightboxImage").attr("src", $(next).attr("src"));
-                  $(".lightboxImage").attr("srcset", $(next).attr("srcset")); // ligne ajouter
->>>>>>> 7b4e45ee3e4c9dd8cdde2dec19a9611b26c188dd
 - [x] Renommer les images avec des mots clés pertinents.
 - [x] Minifier le code. [js](https://jscompress.com/), [css](https://purifycss.online/)
 
