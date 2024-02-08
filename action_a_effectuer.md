@@ -6,14 +6,14 @@
 - [x] Modifier la taille et le format des images. (https://www.img2go.com/)
 - [x] Utilisation de des attribut 'srcset' et 'sizes' pour gérer la taille des images à afficher.
     - Dans le fichier maugallery.js, j'ai modifier les fonction openLigthBox(), prevImage() et nextImage() de la manière suivante : 
-        l.116  openLightBox(element, lightboxId) {
+        - l.116  openLightBox(element, lightboxId) {
                   const lightboxImage = $(`#${lightboxId}`).find(".lightboxImage");
                   lightboxImage.attr("src", element.attr("src")); console.log(lightboxImage.attr("src"));
                   lightboxImage.attr("srcset", element.attr("srcset")); // ligne ajouter
                   lightboxImage.attr("sizes", element.attr("sizes")); // ligne ajouter
                   $(`#${lightboxId}`).modal("toggle");
                           },  
-        l.123  prevImage() et nextImage()
+        - l.123  prevImage() et nextImage()
                 // => 
                 next = imagesCollection[index] || imagesCollection[0];
                   $(".lightboxImage").attr("src", $(next).attr("src"));
