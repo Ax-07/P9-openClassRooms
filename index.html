@@ -86,7 +86,7 @@
 		</div>
 	</header>
 	<main>
-		<section id="header" style="height: 100px;">
+		<section id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -103,8 +103,8 @@
 								srcset="./assets/imgs/slider/slider-ryoji-iwata-desktop.webp" type="image/webp">
 							<source media="(min-width: 500px)"
 								srcset="./assets/imgs/slider/slider-ryoji-iwata-tablette.webp" type="image/webp">
-							<img srcset="./assets/imgs/slider/slider-ryoji-iwata-mobile.webp" class="d-block w-100"
-								alt="A man walking" width="auto" height="auto">
+							<img src="./assets/imgs/slider/slider-ryoji-iwata-mobile.webp" class="d-block w-100"
+								alt="A man walking" max-width="100%" height="auto">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -113,8 +113,8 @@
 								srcset="./assets/imgs/slider/slider-nicholas-green-desktop.webp" type="image/webp">
 							<source media="(min-width: 500px)"
 								srcset="./assets/imgs/slider/slider-nicholas-green-tablette.webp" type="image/webp">
-							<img srcset="./assets/imgs/slider/slider-nicholas-green-mobile.webp" class="d-block w-100"
-								alt="Happy fan" width="auto" height="auto">
+							<img src="./assets/imgs/slider/slider-nicholas-green-mobile.webp" class="d-block w-100"
+								alt="Happy fan" max-width="100%" height="auto">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -123,8 +123,8 @@
 								srcset="./assets/imgs/slider/slider-edward-cisneros-desktop.webp" type="image/webp">
 							<source media="(min-width: 500px)"
 								srcset="./assets/imgs/slider/slider-edward-cisneros-tablette.webp" type="image/webp">
-							<img srcset="./assets/imgs/slider/slider-edward-cisneros-mobile.webp" class="d-block w-100"
-								alt="The groom kissing the bride" width="auto" height="auto">
+							<img src="./assets/imgs/slider/slider-edward-cisneros-mobile.webp" class="d-block w-100"
+								alt="The groom kissing the bride" max-width="100%" height="auto">
 						</picture>
 					</div>
 				</div>
@@ -140,14 +140,14 @@
 				</button>
 			</div>
 		</section>
-		<section id="about" style="height: 676px;">
+		<section id="about">
 			<div class="picture left">
 				<img srcset="
 					./assets/imgs/nina-mobile.webp 500w,
 					./assets/imgs/nina-tablette.webp 1024w,
 					./assets/imgs/nina-desktop.webp 1920w" 
-					sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px" src="./assets/imgs/nina-mobile.webp"
-					alt="picture of Nina Carducci"  width="320px" height="100%"
+					sizes="(min-width: 1024px) 500px, (min-width: 500px) 390px, 250px" src="./assets/imgs/nina-mobile.webp"
+					alt="picture of Nina Carducci"  width="250px" height="100%"
 				/>
 			</div>
 			<div id="about-me">
@@ -171,65 +171,65 @@
 					./assets/imgs/gallery/concerts/concert-aaron-paul-mobile.webp 500w,
 					./assets/imgs/gallery/concerts/concert-aaron-paul-tablette.webp 1024w,
 					./assets/imgs/gallery/concerts/concert-aaron-paul-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/concerts/concert-aaron-paul-mobile.webp" loading="lazy"
-						alt="Concert photo Aaron Paul" />
+						alt="Concert photo Aaron Paul" width="100%" height="auto"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
 					./assets/imgs/gallery/entreprise/entreprise-ali-morshedlou-mobile.webp 500w,
 					./assets/imgs/gallery/entreprise/entreprise-ali-morshedlou-tablette.webp 1024w,
 					./assets/imgs/gallery/entreprise/entreprise-ali-morshedlou-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/entreprise/entreprise-ali-morshedlou-mobile.webp" loading="lazy"
-						alt="Business photo Ali Morshedlou" />
+						alt="Business photo Ali Morshedlou" width="100%" height="auto"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
 					./assets/imgs/gallery/entreprise/entreprise-jason-goodman-mobile.webp 500w,
 					./assets/imgs/gallery/entreprise/entreprise-jason-goodman-tablette.webp 1024w,
 					./assets/imgs/gallery/entreprise/entreprise-jason-goodman-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/entreprise/entreprise-jason-goodman-mobile.webp" loading="lazy"
-						alt="Business photo Jason Goodman" />
+						alt="Business photo Jason Goodman" width="100%" height="auto"/>
 					<img data-gallery-tag="Mariages" class="gallery-item" srcset="
 					./assets/imgs/gallery/mariage/mariage-hannah-busing-mobile.webp 500w,
 					./assets/imgs/gallery/mariage/mariage-hannah-busing-tablette.webp 1024w,
 					./assets/imgs/gallery/mariage/mariage-hannah-busing-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/mariage/mariage-hannah-busing-mobile.webp" loading="lazy"
-						alt="Wedding photo Hannah Busing" />
+						alt="Wedding photo Hannah Busing" width="100%" height="auto"/>
 					<img data-gallery-tag="Portrait" class="gallery-item" srcset="
 					./assets/imgs/gallery/portraits/portraits-ade-tunji-mobile.webp 500w,
 					./assets/imgs/gallery/portraits/portraits-ade-tunji-tablette.webp 1024w,
 					./assets/imgs/gallery/portraits/portraits-ade-tunji-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/portraits/portraits-ade-tunji-mobile.webp" loading="lazy"
-						alt="Portrait photo Ade Tunji" />
+						alt="Portrait photo Ade Tunji" width="100%" height="auto"/>
 					<img data-gallery-tag="Mariages" class="gallery-item" srcset="
 					./assets/imgs/gallery/mariage/mariage-jakob-owens-mobile.webp 500w,
 					./assets/imgs/gallery/mariage/mariage-jakob-owens-tablette.webp 1024w,
 					./assets/imgs/gallery/mariage/mariage-jakob-owens-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/mariage/mariage-jakob-owens-mobile.webp" loading="lazy"
-						alt="Wedding photo Jakob Owens" />
+						alt="Wedding photo Jakob Owens"  width="100%" height="auto"/>
 					<img data-gallery-tag="Portrait" class="gallery-item" srcset="
 					./assets/imgs/gallery/portraits/portraits-nino-van-prattenburg-mobile.webp 500w,
 					./assets/imgs/gallery/portraits/portraits-nino-van-prattenburg-tablette.webp 1024w,
 					./assets/imgs/gallery/portraits/portraits-nino-van-prattenburg-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/portraits/portraits-nino-van-prattenburg-mobile.webp" loading="lazy"
-						alt="Portrait photo Nino Van Prattenburg" />
+						alt="Portrait photo Nino Van Prattenburg"  width="100%" height="auto"/>
 					<img data-gallery-tag="Concert" class="gallery-item" srcset="
 					./assets/imgs/gallery/concerts/concert-austin-neill-mobile.webp 500w,
 					./assets/imgs/gallery/concerts/concert-austin-neill-tablette.webp 1024w,
 					./assets/imgs/gallery/concerts/concert-austin-neill-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/concerts/concert-austin-neill-mobile.webp" loading="lazy"
-						alt="Concert photo Austin Neill" />
+						alt="Concert photo Austin Neill"  width="100%" height="auto"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="
 					./assets/imgs/gallery/entreprise/entreprise-mateus-campos-felipe-mobile.webp 500w,
 					./assets/imgs/gallery/entreprise/entreprise-mateus-campos-felipe-tablette.webp 1024w,
 					./assets/imgs/gallery/entreprise/entreprise-mateus-campos-felipe-desktop.webp 1920w
-				" sizes="(min-width: 1024px) 1920px, (min-width: 500px) 1024px, 320px"
+				" sizes="(min-width: 1024px) 440px, (min-width: 500px) 1024px, 320px"
 						src="./assets/imgs/gallery/entreprise/entreprise-mateus-campos-felipe-mobile.webp"
-						loading="lazy" alt="Business photo Mateus Campos Felipe" />
+						loading="lazy" alt="Business photo Mateus Campos Felipe"  width="100%" height="auto"/>
 				</div>
 			</div>
 			<div class="quote">
